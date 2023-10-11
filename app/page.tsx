@@ -1,15 +1,13 @@
-"use client";
-import { useState } from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home",
+};
 
 const Home = () => {
-  const [counter, setCounter] = useState(0);
-  const onClick = () => {
-    setCounter((prev) => prev + 1);
-  };
   return (
     <div>
-      <h1>Hydration Counter : {counter}</h1>
-      <button onClick={onClick}>Plus</button>
+      <h1>Home</h1>
     </div>
   );
 };
