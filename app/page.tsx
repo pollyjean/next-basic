@@ -1,13 +1,10 @@
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Home",
-};
+import Content from "./Components/Content";
 
 const Home = () => {
   return (
     <div>
       <h1>Home</h1>
+      <Content />
     </div>
   );
 };
